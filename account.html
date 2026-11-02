@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Your Mimansa</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap"><link rel="stylesheet" href="assets/mm.css"><style>
+.hero-band{padding:64px 0 56px;border-bottom:1px solid var(--rule)}
+.hero-band .in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+@media (max-width:760px){.hero-band .in{grid-template-columns:minmax(0,1fr)}}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.facts span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;letter-spacing:0;text-transform:none;color:var(--ink)}
+.access{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.access .free{color:var(--teal)}
+.access .mem{color:var(--accent-text);display:inline-flex;gap:5px;align-items:center}
+.access .mem svg{width:10px;height:10px}
+.kind{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:760px){.split{grid-template-columns:minmax(0,1fr)}}
+.col-box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px}
+.col-box h3{margin:6px 0 12px}
+.col-box ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.col-box li{display:flex;gap:10px;align-items:baseline;font-size:18px;line-height:1.45}
+.col-box li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule);flex:none;transform:translateY(-2px)}
+.col-box.mem{border-color:var(--accent)}
+.col-box.mem li::before{background:var(--accent)}
+</style><link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png"></head><body class="mm"><header class="mm-top"><div class="in"><a href="index.html" aria-label="Mimansa, home"><img src="articles/assets/logo.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"></a><nav class="mm-nav " aria-label="Main"><a href="articles/index.html">Articles</a><a href="stories/index.html">Stories</a><a href="toolkits/index.html">Toolkits</a><a href="about.html">About</a><a href="contribute.html">Tell Kyun</a><a class="mm-studio" data-creators hidden href="studio/index.html">Studio</a><a class="mm-auth" data-mm-auth href="join.html">Join</a></nav></div></header>
+<main>
+<section class="mm-sec" data-visitors><div class="mm-narrow stack" style="gap:20px">
+ <div class="mm-ky "><div class="st"><img src="articles/assets/kyun/curious.webp" alt="" style="--w:104px"><svg viewBox="0 0 220 36" aria-hidden="true"><path class="land-fill" d="M8 20 C50 6 170 4 212 18 C196 30 40 33 8 20 Z"/><path class="land-line" d="M14 17 C60 6 160 5 206 15"/><path class="tick" d="M38 13 l-3 -6 M44 12 l1 -6 M176 11 l3 -6 M182 12 l5 -5 M104 7 l0 -5"/></svg></div><div><span class="who">Kyun</span><p>You are not signed in yet.</p></div></div>
+ <div class="mm-row"><a class="mm-btn" href="join.html">Join</a><a class="mm-btn ghost" href="signin.html">Sign in</a></div>
+</div></section>
+<div data-members hidden>
+<section class="hero-band"><div class="mm-wrap in">
+ <div class="stack"><span class="mm-kick" id="acRole">Signed in</span><h1 id="acHi">Your Mimansa</h1><p class="lead m">What you have sent us, and your letter settings.</p></div>
+ <div class="mm-ky "><div class="st"><img src="articles/assets/kyun/delight.webp" alt="" style="--w:108px"><svg viewBox="0 0 220 36" aria-hidden="true"><path class="land-fill" d="M8 20 C50 6 170 4 212 18 C196 30 40 33 8 20 Z"/><path class="land-line" d="M14 17 C60 6 160 5 206 15"/><path class="tick" d="M38 13 l-3 -6 M44 12 l1 -6 M176 11 l3 -6 M182 12 l5 -5 M104 7 l0 -5"/></svg></div><div><span class="who">Kyun</span><p>Good to see you. What shall we ask today?</p></div></div>
+</div></section>
+<section class="mm-sec"><div class="mm-wrap mm-two">
+ <div class="stack" style="gap:16px"><span class="mm-kick">Your submissions</span><h2>What you sent us</h2>
+  <div id="mine"><p class="m">Nothing yet. <a href="contribute.html">Tell Kyun a story</a> or <a href="contribute.html#article">send an article</a>.</p></div>
+  <span class="mm-kick" style="margin-top:28px">The letter</span>
+  <label class="mm-check"><input type="checkbox" checked> Fortnightly letter: one article, one story, one tool</label>
+  <label class="mm-check"><input type="checkbox"> Tell me when a new playbook is out</label>
+  <div class="mm-row" style="margin-top:20px"><button class="mm-btn ghost" id="out" type="button">Sign out</button><a class="mm-btn quiet" data-creators hidden href="studio/index.html">Go to the team studio</a></div>
+ </div>
+ <div class="stack" style="gap:16px"><span class="mm-kick">Your toolkits</span><h2>Every one is free to download, signed in or not</h2>
+  <div class="mm-scroll"><table class="mm-table"><thead><tr><th>Toolkit</th><th>Type</th><th>Tools</th></tr></thead><tbody><tr><td><a href="toolkits/hr-in-rupees-kit.html">HR in Rupees Kit</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr><tr><td><a href="toolkits/goal-link-kit.html">Goal Link Kit</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr><tr><td><a href="toolkits/stay-talk-kit.html">Stay Talk Kit</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr><tr><td><a href="toolkits/keep-them-before-they-go.html">Keep Them Before They Go</a></td><td class="m">Playbook</td><td class="m">6 tools</td></tr><tr><td><a href="toolkits/retrain-managers-in-direct-feedback.html">Retrain Managers in Direct Feedback</a></td><td class="m">Playbook</td><td class="m">5 tools</td></tr><tr><td><a href="toolkits/bring-agents-into-a-team.html">Bring Agents Into a Team</a></td><td class="m">Playbook</td><td class="m">6 tools</td></tr><tr><td><a href="toolkits/clear-update-kit.html">Clear Update Kit</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr><tr><td><a href="toolkits/from-first-slip-to-fair-decision.html">From First Slip to Fair Decision</a></td><td class="m">Playbook</td><td class="m">5 tools</td></tr><tr><td><a href="toolkits/potential-rating-health-check.html">Potential Rating Health Check</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr><tr><td><a href="toolkits/before-training-kit.html">Before Training Kit</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr><tr><td><a href="toolkits/values-to-behaviours-kit.html">Values to Behaviours Kit</a></td><td class="m">Toolkit</td><td class="m">3 tools</td></tr></tbody></table></div></div>
+</div></section>
+</div>
+</main><footer class="mm-foot"><div class="in"><img src="articles/assets/logo-dark.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"><nav><a href="articles/index.html">Articles</a><a href="stories/index.html">Stories</a><a href="toolkits/index.html">Toolkits</a><a href="about.html">About</a><a href="contribute.html">Tell Kyun</a><a href="join.html">Join</a></nav></div></footer><script src="assets/mm.js" data-root=""></script>
+<script>
+(function(){
+ try{var n=localStorage.getItem('mimansa-name');if(n)document.getElementById('acHi').textContent='Welcome, '+n}catch(x){}
+ MM.onRole(function(r){document.getElementById('acRole').textContent=r==='creator'?'Mimansa team · editor':'Signed in'});
+ document.getElementById('out').addEventListener('click',function(){MM.setRole('visitor');location.href='index.html'});
+ var list=[];try{list=JSON.parse(localStorage.getItem('mimansa-my-subs')||'[]')}catch(x){}
+ if(list.length){document.getElementById('mine').innerHTML='<div class="mm-scroll"><table class="mm-table"><thead><tr><th>What</th><th>Sent</th><th>Status</th></tr></thead><tbody>'+list.map(function(i){return '<tr><td>'+MM.esc(i.title)+'<br><span class="m" style="font-size:15px">'+MM.esc(i.kind)+'</span></td><td class="m">'+MM.esc(i.date)+'</td><td><span class="mm-status s-new">'+(i.saved?'Received':'Not sent')+'</span></td></tr>'}).join('')+'</tbody></table></div>'}
+})();
+</script></body></html>

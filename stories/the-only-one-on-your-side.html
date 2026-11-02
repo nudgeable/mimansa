@@ -1,0 +1,132 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>The Only One On Your Side · Mimansa</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap"><link rel="stylesheet" href="../assets/mm.css"><style>
+.hero-band{padding:64px 0 56px;border-bottom:1px solid var(--rule)}
+.hero-band .in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+@media (max-width:760px){.hero-band .in{grid-template-columns:minmax(0,1fr)}}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.facts span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;letter-spacing:0;text-transform:none;color:var(--ink)}
+.access{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.access .free{color:var(--teal)}
+.access .mem{color:var(--accent-text);display:inline-flex;gap:5px;align-items:center}
+.access .mem svg{width:10px;height:10px}
+.kind{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:760px){.split{grid-template-columns:minmax(0,1fr)}}
+.col-box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px}
+.col-box h3{margin:6px 0 12px}
+.col-box ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.col-box li{display:flex;gap:10px;align-items:baseline;font-size:18px;line-height:1.45}
+.col-box li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule);flex:none;transform:translateY(-2px)}
+.col-box.mem{border-color:var(--accent)}
+.col-box.mem li::before{background:var(--accent)}
+</style><style>
+.st-hero{padding:64px 0 40px}
+.st-hero .q{font-size:clamp(36px,5vw,60px);line-height:1.08;font-style:italic;letter-spacing:-.015em;max-width:950px}
+.teller{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.light{display:inline-block;width:9px;height:9px;border-radius:50%;background:#DE4935;box-shadow:0 0 0 4px rgba(222,73,53,.15);vertical-align:middle}
+.watch{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:28px;align-items:start}
+@media (max-width:860px){.watch{grid-template-columns:minmax(0,1fr)}}
+.player{position:relative;border-radius:12px;overflow:hidden;background:#111;aspect-ratio:16/9}
+.player video,.player img{width:100%;height:100%;display:block;object-fit:cover}
+.player .lockover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;padding:24px;background:linear-gradient(rgba(20,18,15,0) 30%,rgba(20,18,15,.85));color:#F6F2E9}
+.player .lockover h3{font-size:clamp(22px,2.6vw,30px);color:#F6F2E9}
+.player .lockover p{color:rgba(246,242,233,.8);font-size:17px}
+.reel{border-radius:12px;overflow:hidden;background:#111;aspect-ratio:9/16;max-width:300px}
+.reel video{width:100%;height:100%;display:block;object-fit:cover}
+.read-col{max-width:700px}
+.read-col p{font-size:20px;line-height:1.65;margin-bottom:18px}
+.pairs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.pair{grid-template-columns:minmax(0,1fr);gap:6px}}
+.pair .said{font-size:20px}
+.pair .meant{font-size:20px;font-style:italic;color:var(--accent-text)}
+.chap{counter-reset:c;list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.chap li{counter-increment:c;display:grid;grid-template-columns:56px minmax(0,1fr);gap:4px 14px;padding:16px 0;border-top:1px solid var(--rule)}
+.chap li::before{content:counter(c,decimal-leading-zero);font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--accent-text);padding-top:7px;grid-row:span 2}
+.chap b{font-weight:400;font-size:23px}
+.chap span{color:var(--muted);font-size:17px}
+.lessons{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.lessons li{border-left:3px solid var(--accent);padding-left:16px}
+.lessons b{display:block;font-weight:400;font-size:23px;line-height:1.3}
+.lessons span{color:var(--muted);font-size:18px}
+.leaves{border-top:3px solid var(--accent);padding-top:22px;max-width:900px}
+.leaves p{font-size:clamp(26px,3.2vw,38px);line-height:1.25;font-style:italic}
+.poll{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.poll button{font-family:var(--serif);font-size:18px;border:1.5px solid var(--rule);background:var(--card);border-radius:999px;padding:10px 18px;cursor:pointer;color:var(--ink)}
+.poll button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent);color:#fff}
+.soon{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.soon>div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.soon>div{grid-template-columns:minmax(0,1fr);gap:4px}}
+.soon q{font-size:24px;font-style:italic;quotes:"“" "”"}
+</style><link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="../assets/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png"></head><body class="mm"><header class="mm-top"><div class="in"><a href="../index.html" aria-label="Mimansa, home"><img src="../articles/assets/logo.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"></a><nav class="mm-nav " aria-label="Main"><a href="../articles/index.html">Articles</a><a href="../stories/index.html" aria-current="page">Stories</a><a href="../toolkits/index.html">Toolkits</a><a href="../about.html">About</a><a href="../contribute.html">Tell Kyun</a><a class="mm-studio" data-creators hidden href="../studio/index.html">Studio</a><a class="mm-auth" data-mm-auth href="../join.html">Join</a></nav></div></header>
+<main>
+<section class="st-hero"><div class="mm-wrap stack" style="gap:18px">
+ <span class="mm-label">Story 02 · Volume 01 · Workplace investigations</span>
+ <p class="q">“He says everyone is against me. That he’s the only one on my side.”</p>
+ <span class="teller"><span class="light"></span>&nbsp; Story 02 · shared by an HR leader · every name changed · comic film, 8 min 50 s</span>
+</div></section>
+
+<section style="padding-bottom:56px"><div class="mm-wrap watch">
+ <div class="stack" style="gap:12px">
+  <div class="player" data-members><video controls preload="none" poster="../media/story-poster.jpg" src="../media/film.mp4"></video></div>
+  </div>
+  <span class="mm-label">Full film · five chapters · 9 min</span>
+ </div>
+ <div class="stack" style="gap:10px"><div class="reel"><video controls preload="none" playsinline src="../media/reel.mp4" poster="../media/story-poster.jpg"></video></div><span class="mm-label">Trailer · 40 s</span></div>
+</div></section>
+
+<section class="mm-sec sand"><div class="mm-wrap"><div class="read-col">
+ <span class="mm-kick">What happened</span>
+ <h2 style="margin:10px 0 22px">Resigned. Withdrawn. Resigned.</h2>
+ <p>It was 2020, the lockdown, and everyone worked from home. In three days, the HR head, Nandini, got three notifications about one employee, Ruhi. She resigned. She withdrew it. She resigned again. Then she stopped answering calls and email.</p>
+ <p>Her brother called from another city: the family could not reach her either. When Ruhi finally picked up, she said she wanted to leave because of her manager. A complaint followed, and an internal committee looked into it. What it could prove, and what HR did next, is the rest of the film.</p>
+</div></div></section>
+
+<section class="mm-sec"><div class="mm-wrap"><div class="read-col" style="max-width:900px">
+ <span class="mm-kick">Said · and meant</span><h2 style="margin:10px 0 22px">Three things that were said, and what they meant.</h2>
+ <div class="pairs">
+  <div class="pair"><span class="said">“I’m the only one on your side.”</span><span class="meant">It sounds supportive, but it cuts her off from everyone else.</span></div>
+  <div class="pair"><span class="said">“Probably just a bad day, ma’am.”</span><span class="meant">Saying it once is fair. Saying it twice should make you check.</span></div>
+  <div class="pair" data-members><span class="said">“Nothing was proven.”</span><span class="meant">Not proven is not the same as no concerns.</span></div>
+ </div>
+</div></div></section>
+
+<section class="mm-sec sand"><div class="mm-wrap mm-two">
+ <div class="stack"><span class="mm-kick">Chapters</span><h2>Five chapters, one point of view.</h2><p class="m">We follow Nandini the whole way. You only know what she knew, when she knew it.</p>
+  <div data-gate="{&quot;label&quot;: &quot;Full film · for members&quot;, &quot;title&quot;: &quot;Watch the full film with a free membership.&quot;, &quot;text&quot;: &quot;8 minutes 50 seconds, in five chapters. Members also get the chapter guide and the three lessons for HR.&quot;, &quot;pose&quot;: &quot;none&quot;}" data-nofade hidden></div></div>
+ <ol class="chap" data-members>
+  <li><b>Three notifications</b><span>Resigned, withdrawn, resigned. Then silence.</span></li>
+  <li><b>The letter</b><span>A call from her brother, and a letter she wrote home.</span></li>
+  <li><b>The only one on your side</b><span>Ruhi names her manager. A committee is set up.</span></li>
+  <li><b>What can be proved</b><span>Chats, a receipt, and a finding: not substantiated.</span></li>
+  <li><b>What HR can’t say</b><span>A promotion is proposed. HR says no, and can’t say why.</span></li>
+ </ol>
+</div></section>
+
+<section class="mm-sec" data-members><div class="mm-wrap mm-two">
+ <div class="stack"><span class="mm-kick">For HR professionals</span><h2>Three lessons from the case.</h2></div>
+ <ol class="lessons">
+  <li><b>A missing employee is a welfare question before it is an HR process.</b><span>Act on silence early, and through every channel.</span></li>
+  <li><b>“I’m the only one on your side” is a boundary problem, whatever the intent.</b><span>Managers can support people without becoming their only support.</span></li>
+  <li><b>“Not proven” is not the same as “no concerns.”</b><span>A closed inquiry can still count when you judge someone’s readiness to lead.</span></li>
+ </ol>
+</div></section>
+
+<section class="mm-sec sand"><div class="mm-wrap">
+ <div class="leaves"><span class="mm-label">The question it leaves</span>
+ <p style="margin-top:12px">Your decision is visible. Your reasons are confidential. How do you protect trust in HR when you can’t explain yourself?</p>
+ <div class="poll" role="group" aria-label="Where do you land?"><button data-v="Explain what you can, even if it is little">Explain what you can</button><button data-v="Stay silent and let the record speak">Stay silent</button><button data-v="Let the business leader carry the decision">Ask the business leader to explain it</button></div>
+ <p class="m" id="pollOut" style="font-size:17px;margin-top:12px;font-style:normal" aria-live="polite">Where do you land? Tap one to see how other readers answered.</p>
+ <p style="margin-top:22px;font-size:20px;font-style:normal"><a class="mm-btn quiet" href="../contribute.html#reply">Tell us what you would have done</a></p></div>
+</div></section>
+
+<section class="mm-sec"><div class="mm-wrap mm-two">
+ <a class="mm-card" href="../articles/article-03.html"><span class="kind">Read next · Article 03</span><h3>The Exit Interview: A Ritual of Polite Lies</h3><p>Why do we ask people why they’re leaving, in the week they leave?</p></a>
+ <a class="mm-card" href="../toolkits/keep-them-before-they-go.html"><span class="kind">Use this at work · Playbook</span><h3>Keep Them Before They Go</h3><p>Spot risk early, talk often, and act fast when something changes.</p></a>
+</div>
+<p class="m mm-wrap" style="font-size:16px;margin-top:40px">Every name and detail that could identify a person has been changed. The committee did not substantiate the allegations, and the film never shows them as fact. Spotted an error? <a href="../contribute.html#reply">Write to the editors.</a></p>
+</section>
+</main><footer class="mm-foot"><div class="in"><img src="../articles/assets/logo-dark.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"><nav><a href="../articles/index.html">Articles</a><a href="../stories/index.html">Stories</a><a href="../toolkits/index.html">Toolkits</a><a href="../about.html">About</a><a href="../contribute.html">Tell Kyun</a><a href="../join.html">Join</a></nav></div></footer><script src="../assets/mm.js" data-root="../"></script>
+<script>
+document.querySelectorAll('.poll button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.poll button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});document.getElementById('pollOut').textContent='You chose: '+b.dataset.v+'. Live results will show here once the poll opens.'})});
+</script></body></html>

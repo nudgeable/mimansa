@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Join · Mimansa</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap"><link rel="stylesheet" href="assets/mm.css"><style>
+.hero-band{padding:64px 0 56px;border-bottom:1px solid var(--rule)}
+.hero-band .in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+@media (max-width:760px){.hero-band .in{grid-template-columns:minmax(0,1fr)}}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.facts span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;letter-spacing:0;text-transform:none;color:var(--ink)}
+.access{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.access .free{color:var(--teal)}
+.access .mem{color:var(--accent-text);display:inline-flex;gap:5px;align-items:center}
+.access .mem svg{width:10px;height:10px}
+.kind{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:760px){.split{grid-template-columns:minmax(0,1fr)}}
+.col-box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px}
+.col-box h3{margin:6px 0 12px}
+.col-box ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.col-box li{display:flex;gap:10px;align-items:baseline;font-size:18px;line-height:1.45}
+.col-box li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule);flex:none;transform:translateY(-2px)}
+.col-box.mem{border-color:var(--accent)}
+.col-box.mem li::before{background:var(--accent)}
+</style><link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png"></head><body class="mm"><header class="mm-top"><div class="in"><a href="index.html" aria-label="Mimansa, home"><img src="articles/assets/logo.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"></a><nav class="mm-nav " aria-label="Main"><a href="articles/index.html">Articles</a><a href="stories/index.html">Stories</a><a href="toolkits/index.html">Toolkits</a><a href="about.html">About</a><a href="contribute.html">Tell Kyun</a><a class="mm-studio" data-creators hidden href="studio/index.html">Studio</a><a class="mm-auth" data-mm-auth href="join.html">Join</a></nav></div></header>
+<main>
+<section class="mm-sec"><div class="mm-wrap mm-two">
+ <div class="stack" style="gap:22px">
+  <span class="mm-kick">Join · free</span>
+  <h1>Get the Mimansa letter. A new article and a tool every fortnight, free.</h1>
+  <p class="lead m">Everything on Mimansa is free to read, watch and download, with or without an account. Joining gets you the letter and a place to follow what you send us.</p>
+  <div class="col-box"><span class="mm-label">What joining gets you</span><h3>All free</h3><ul><li>The fortnightly letter: one article, one story, one tool</li><li>A page to follow what you have sent us</li><li>Your own page to follow what you sent us</li><li>Your votes and replies, saved in one place</li></ul></div>
+  <div class="mm-ky "><div class="st"><img src="articles/assets/kyun/delight.webp" alt="" style="--w:108px"><svg viewBox="0 0 220 36" aria-hidden="true"><path class="land-fill" d="M8 20 C50 6 170 4 212 18 C196 30 40 33 8 20 Z"/><path class="land-line" d="M14 17 C60 6 160 5 206 15"/><path class="tick" d="M38 13 l-3 -6 M44 12 l1 -6 M176 11 l3 -6 M182 12 l5 -5 M104 7 l0 -5"/></svg></div><div><span class="who">Kyun</span><p>Nothing here is locked. Joining just brings the next piece to your inbox.</p></div></div>
+ </div>
+ <div>
+  <form class="mm-form mm-fs" id="joinForm" novalidate style="background:var(--card)">
+   <legend>Sign up for the letter</legend>
+   <div class="mm-field"><label for="jn">Your name</label><input id="jn" type="text" autocomplete="name" required></div>
+   <div class="mm-field"><label for="je">Email</label><input id="je" type="email" autocomplete="email" required><span class="hint">We send a sign-in link here. No password to remember.</span></div>
+   <div class="mm-pair">
+    <div class="mm-field"><label for="jr">Your role</label><select id="jr"><option>HR leader or CHRO</option><option>HR business partner</option><option>HR specialist</option><option>People manager</option><option>Founder or CXO</option><option>Student</option><option>Other</option></select></div>
+    <div class="mm-field"><label for="js">Company size</label><select id="js"><option>Under 100</option><option>100 to 1,000</option><option>1,000 to 10,000</option><option>Over 10,000</option></select></div>
+   </div>
+   <div class="mm-field"><span class="lbl">Topics you care about</span><div class="mm-chips" id="jt"><button type="button" aria-pressed="false">HR strategy</button><button type="button" aria-pressed="false">Performance &amp; talent</button><button type="button" aria-pressed="false">Talent acquisition</button><button type="button" aria-pressed="false">HR operations</button><button type="button" aria-pressed="false">Total rewards</button><button type="button" aria-pressed="false">Learning &amp; development</button><button type="button" aria-pressed="false">AI at work</button><button type="button" aria-pressed="false">Behavioural science</button></div></div>
+   <label class="mm-check"><input type="checkbox" id="jl" checked> Send me the fortnightly letter: one article, one story, one tool.</label>
+   <label class="mm-check"><input type="checkbox" id="jc"> I agree to the terms and privacy note.</label>
+   <div class="mm-msg warn" id="jm" hidden></div>
+   <button class="mm-btn" type="submit" style="align-self:flex-start">Join</button>
+   <p class="m" style="font-size:16px">Already joined? <a href="signin.html">Sign in</a></p>
+  </form>
+  <div class="mm-fs stack" id="joinDone" hidden style="background:var(--card)">
+   <div class="mm-ky "><div class="st"><img src="articles/assets/kyun/delight.webp" alt="" style="--w:108px"><svg viewBox="0 0 220 36" aria-hidden="true"><path class="land-fill" d="M8 20 C50 6 170 4 212 18 C196 30 40 33 8 20 Z"/><path class="land-line" d="M14 17 C60 6 160 5 206 15"/><path class="tick" d="M38 13 l-3 -6 M44 12 l1 -6 M176 11 l3 -6 M182 12 l5 -5 M104 7 l0 -5"/></svg></div><div><span class="who">Kyun</span><p>Welcome in. Check your inbox for the sign-in link.</p></div></div>
+   <p class="m" style="font-size:17px">Welcome. Check your inbox for a link to confirm your email.</p>
+   <div class="mm-row"><a class="mm-btn" href="articles/index.html">Start reading</a><a class="mm-btn ghost" href="account.html">My account</a></div>
+  </div>
+ </div>
+</div></section>
+</main><footer class="mm-foot"><div class="in"><img src="articles/assets/logo-dark.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"><nav><a href="articles/index.html">Articles</a><a href="stories/index.html">Stories</a><a href="toolkits/index.html">Toolkits</a><a href="about.html">About</a><a href="contribute.html">Tell Kyun</a><a href="join.html">Join</a></nav></div></footer><script src="assets/mm.js" data-root=""></script>
+<script>
+(function(){
+ try{var e=sessionStorage.getItem('mm-email');if(e)document.getElementById('je').value=e}catch(x){}
+ document.querySelectorAll('#jt button').forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',String(b.getAttribute('aria-pressed')!=='true'))})});
+ document.getElementById('joinForm').addEventListener('submit',function(ev){ev.preventDefault();
+  var m=document.getElementById('jm'),n=document.getElementById('jn').value.trim(),e=document.getElementById('je').value.trim();
+  var err=!n?'Add your name.':!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)?'Enter an email like name@company.com.':!document.getElementById('jc').checked?'Please agree to the terms to join.':'';
+  if(err){m.textContent=err;m.hidden=false;return}
+  try{localStorage.setItem('mimansa-name',n)}catch(x){}
+  MM.setRole(MM.role()==='creator'?'creator':'member');
+  document.getElementById('joinForm').hidden=true;document.getElementById('joinDone').hidden=false;window.scrollTo(0,0);
+ });
+})();
+</script></body></html>
