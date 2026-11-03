@@ -94,6 +94,20 @@ body.mm{margin:0;background:var(--paper);color:var(--ink);font-family:var(--seri
 .mm-ky .st svg{width:100%;height:auto;overflow:visible}
 .mm-ky .who{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text);display:block;margin-bottom:2px}
 .mm-ky p{font-style:italic;font-size:20px;line-height:1.5;margin:0}
+/* Page hero: half words, half Kyun, the same split as the About page */
+.hero-band{padding:88px 0;border-bottom:1px solid var(--rule)}
+.hero-band .in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.mm .hero-band h1{font-size:clamp(38px,5vw,60px);line-height:1.06}
+.hero-band .mm-ky{flex-direction:column;align-items:center;text-align:center;gap:22px}
+.hero-band .mm-ky>div:not(.st){max-width:380px}
+.hero-band .mm-ky .st{width:min(300px,64vw)}
+.hero-band .mm-ky .st img{width:calc(var(--w,104px) * 2.1);max-width:100%;margin-bottom:-22px}
+@media (max-width:860px){
+  .hero-band{padding:56px 0}
+  .hero-band .in{grid-template-columns:minmax(0,1fr);gap:32px}
+  .hero-band .mm-ky .st{width:min(220px,56vw)}
+  .hero-band .mm-ky .st img{width:calc(var(--w,104px) * 1.5);margin-bottom:-16px}
+}
 .land-fill{display:none}
 .land-line{fill:none;stroke:var(--ink);stroke-width:1.3;stroke-linecap:round}
 .tick{fill:none;stroke:var(--ink);stroke-width:1.1;stroke-linecap:round}
@@ -109,12 +123,6 @@ a.mm-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(36,
 .mm-card .meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)}
 .mm-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
 @media (max-width:860px){.mm-two{grid-template-columns:minmax(0,1fr);gap:32px}}
-
-/* Two equal hero columns: intro copy on the left, Kyun illustration on the right. */
-.hero-band .in{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
-.hero-band .mm-ky{justify-content:center}
-.hero-band .mm-ky .st{width:min(100%,300px)}
-@media (max-width:760px){.hero-band .in{grid-template-columns:minmax(0,1fr);gap:28px}.hero-band .mm-ky{justify-content:flex-start}.hero-band .mm-ky .st{width:150px}}
 
 /* forms */
 .mm-form{display:flex;flex-direction:column;gap:22px}
