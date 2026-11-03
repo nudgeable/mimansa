@@ -1,4 +1,4 @@
-# Mimansa website v1: developer handoff
+# Mimansa website v1: developer handof
 
 Plain HTML, CSS and a little JavaScript. No build step, no framework, no server code. Every link is relative, so the folder works at the domain root or in a subfolder.
 
