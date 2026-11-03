@@ -55,19 +55,6 @@ figure{margin:0}
 }
 @keyframes drift{to{stroke-dashoffset:-22}}
 
-/* nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:calc(14px + env(safe-area-inset-top,0px)) 20px 14px;transition:background .4s,border-color .4s,color .4s;border-bottom:1px solid transparent}
-.nav img{height:32px;width:auto;display:block}
-.nav .lg-dark{display:none}
-.nav.on-night .lg-dark{display:block}
-.nav.on-night .lg-light{display:none}
-.nav:not(.on-night){background:rgba(246,242,233,.95);backdrop-filter:blur(8px);border-color:var(--rule)}
-.nav.on-night{color:var(--on-night)}
-.menu{display:flex;align-items:center;gap:26px}
-.menu a{text-decoration:none;opacity:.85}
-.menu a:hover,.menu a[aria-current]{opacity:1}
-.menu .sub{opacity:1;background:var(--accent);color:#fff;padding:9px 15px;border-radius:999px}
-@media (max-width:760px){.menu a:not(.sub){display:none}}
 
 /* hero */
 .night{background:radial-gradient(90% 70% at 50% 75%,#2B2722 0%,var(--night) 70%);color:var(--on-night);position:relative;overflow:hidden}
@@ -211,10 +198,9 @@ a.person{text-decoration:none;padding:20px 22px}
 .cta-row{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
 </style><link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png"></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="ink" filterUnits="userSpaceOnUse" x="-2000" y="-2000" width="6000" height="6000"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter><radialGradient id="g-spark"><stop offset="0" stop-color="#DE4935" stop-opacity=".38"/><stop offset=".45" stop-color="#DE4935" stop-opacity=".12"/><stop offset="1" stop-color="#DE4935" stop-opacity="0"/></radialGradient><linearGradient id="g-pool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DE4935" stop-opacity=".28"/><stop offset="1" stop-color="#DE4935" stop-opacity="0"/></linearGradient></defs></svg>
-<header class="nav mono" id="nav"><a href="index.html" aria-label="Mimansa, home"><img class="lg-dark" src="logo-dark.png" alt="" width="640" height="180"><img class="lg-light" src="logo.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"></a>
-<nav class="menu" aria-label="Main"><a href="articles/index.html">Articles</a><a href="stories/index.html">Stories</a><a href="toolkits/index.html">Toolkits</a><a href="about.html" aria-current="page">About</a><a href="contribute.html">Tell Kyun</a><a class="sub" data-mm-auth href="join.html">Join</a></nav></header>
+<header class="mm-top"><div class="in"><a href="index.html" aria-label="Mimansa, home"><img src="articles/assets/logo.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"></a><nav class="mm-nav " aria-label="Main"><a href="articles/index.html">Articles</a><a href="stories/index.html">Stories</a><a href="toolkits/index.html">Toolkits</a><a href="about.html" aria-current="page">About</a><a href="contribute.html">Tell Kyun</a><a class="mm-studio" data-creators hidden href="studio/index.html">Studio</a><a class="mm-auth" data-mm-auth href="join.html">Join</a></nav></div></header>
 <main>
-  <section class="wrap" style="padding-top:150px">
+  <section class="wrap" style="padding-top:88px">
     <div class="wide two">
       <div class="col"><span class="kick">About Mimansa</span><h1 class="ah1">Questions HR asks in private, worked through in public.</h1>
       <p class="lead m">Mimansa is research and advisory for CHROs and HR leaders in India, written by HR practitioners. Everything we publish is free to read, use and share.</p></div>
