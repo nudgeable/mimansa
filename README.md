@@ -4,7 +4,7 @@ Until launch, `main` serves **only** the teaser landing page (`index.html`).
 
 - Every other URL falls back to the teaser: `404.html` redirects to `/`, and `_redirects` does the same on Netlify / Cloudflare Pages.
 - The film plays from YouTube (`YT_ID` in `index.html`).
-- Both forms (Notify me, Contact) send a simple "someone is interested" email to hitanshu@nudgeable.ai only, via formsubmit.co (`MAIL_TO` in `index.html`). The first submission sends an activation email to hitanshu@nudgeable.ai, and you must click its link once.
+- Both forms (Notify me, Contact) send a simple "someone is interested" email to hitanshu@nudgeable.ai, with a copy to team@mimansa.work, via formsubmit.co (`MAIL_TO` / `MAIL_CC` in `index.html`). The first submission sends an activation email to hitanshu@nudgeable.ai, and you must click its link once.
 
 ## Restoring the full site at launch
 

@@ -316,16 +316,17 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 
 <script>
 /* Every form sends a simple notification email via FormSubmit (formsubmit.co, no account needed).
-   It goes only to MAIL_TO (the developer). The FIRST submission ever triggers an
+   MAIL_TO (the developer) receives it and MAIL_CC gets a copy. The FIRST submission ever triggers an
    activation email to MAIL_TO; click the link in it once, otherwise nothing is delivered. */
 const MAIL_TO = "hitanshu@nudgeable.ai";
+const MAIL_CC = "team@mimansa.work";
 const YT_ID = "0Llu7Rk7YME";
 async function save(kind,data){
   const what = kind==="contact" ? "sent a story or question" : "wants to be notified at launch";
   const who = data.name ? data.name+" ("+data.email+")" : data.email;
   const body = Object.assign({
     _subject:"Mimansa: someone is interested",
-    _template:"basic",_captcha:"false",
+    _cc:MAIL_CC,_template:"basic",_captcha:"false",
     Summary:who+" "+what+" on the Mimansa teaser page.",
     Form:kind==="contact"?"Contact / story":"Notify me at launch"
   },{Name:data.name||"",email:data.email,Message:data.message||""},{"Sent at":new Date().toString(),Page:location.href});
