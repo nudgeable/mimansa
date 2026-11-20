@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /studio/
+Disallow: /plan.html
+Disallow: /account.html
+Disallow: /signin.html
+
+Sitemap: https://www.mimansa.work/sitemap.xml

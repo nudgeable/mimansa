@@ -1,0 +1,157 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Stories · Mimansa</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap"><link rel="stylesheet" href="../assets/mm.css"><style>
+.hero-band{padding:64px 0 56px;border-bottom:1px solid var(--rule)}
+.hero-band .in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+@media (max-width:760px){.hero-band .in{grid-template-columns:minmax(0,1fr)}}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.facts span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;letter-spacing:0;text-transform:none;color:var(--ink)}
+.access{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.access .free{color:var(--teal)}
+.access .mem{color:var(--accent-text);display:inline-flex;gap:5px;align-items:center}
+.access .mem svg{width:10px;height:10px}
+.kind{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:760px){.split{grid-template-columns:minmax(0,1fr)}}
+.col-box{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px}
+.col-box h3{margin:6px 0 12px}
+.col-box ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.col-box li{display:flex;gap:10px;align-items:baseline;font-size:18px;line-height:1.45}
+.col-box li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule);flex:none;transform:translateY(-2px)}
+.col-box.mem{border-color:var(--accent)}
+.col-box.mem li::before{background:var(--accent)}
+.hero-band .mm-ky{max-width:380px}
+
+/* 18 Nov: story cards in the Articles style */
+.st-feat{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:48px;align-items:center;text-decoration:none;color:inherit;padding-block:8px 48px;border-bottom:1px solid var(--rule)}
+.st-frame{background:var(--sand);border-radius:8px;overflow:hidden;aspect-ratio:16/10;display:flex;align-items:flex-end;padding:18px 20px 8px}
+.st-frame .sketch{width:100%;height:100%;display:block;overflow:visible;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+a.st-card:hover .st-frame .sketch,a.st-feat:hover .st-frame .sketch{transform:scale(1.035)}
+.st-body{display:flex;flex-direction:column;gap:12px;min-width:0}
+.st-kick{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text)}
+.st-title{font-family:var(--serif);font-weight:500;font-size:24px;line-height:1.22;margin:0;text-wrap:balance}
+.st-feat .st-title{font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-.01em}
+a.st-card:hover .st-title,a.st-feat:hover .st-title{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
+.st-q{font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.45;color:var(--muted);margin:0}
+.st-feat .st-q{font-size:21px}
+.st-meta{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.st-res{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.st-res .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(224,154,0,.2),0 0 10px var(--accent);flex:none}
+.st-go{align-self:flex-start;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border-bottom:2px solid var(--accent);padding-bottom:3px;margin-top:4px}
+.st-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px 36px}
+.st-card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;min-width:0}
+.st-card .st-frame{margin-bottom:8px}
+.st-card.st-later .st-frame{opacity:.92}
+.st-head{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:44px 0 22px;display:block}
+@media (max-width:1000px){.st-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.st-feat{grid-template-columns:minmax(0,1fr);gap:24px}}
+@media (max-width:640px){.st-grid{grid-template-columns:minmax(0,1fr);gap:40px}}
+.mm-ky .who{display:none}
+</style><style>
+.st-hero{padding:64px 0 40px}
+.st-hero .q{font-size:clamp(36px,5vw,60px);line-height:1.08;font-style:italic;letter-spacing:-.015em;max-width:950px}
+.teller{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.light{display:inline-block;width:9px;height:9px;border-radius:50%;background:#E09A00;box-shadow:0 0 0 4px rgba(224,154,0,.15);vertical-align:middle}
+.watch{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:28px;align-items:start}
+@media (max-width:860px){.watch{grid-template-columns:minmax(0,1fr)}}
+.player{position:relative;border-radius:12px;overflow:hidden;background:#111;aspect-ratio:16/9}
+.player video,.player img{width:100%;height:100%;display:block;object-fit:cover}
+.player .lockover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;padding:24px;background:linear-gradient(rgba(18,20,23,0) 30%,rgba(18,20,23,.85));color:#FAF8F4}
+.player .lockover h3{font-size:clamp(22px,2.6vw,30px);color:#FAF8F4}
+.player .lockover p{color:rgba(250,248,244,.8);font-size:17px}
+.reel{border-radius:12px;overflow:hidden;background:#111;aspect-ratio:9/16;max-width:300px}
+.reel video{width:100%;height:100%;display:block;object-fit:cover}
+.read-col{max-width:700px}
+.read-col p{font-size:20px;line-height:1.65;margin-bottom:18px}
+.pairs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.pair{grid-template-columns:minmax(0,1fr);gap:6px}}
+.pair .said{font-size:20px}
+.pair .meant{font-size:20px;font-style:italic;color:var(--accent-text)}
+.chap{counter-reset:c;list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.chap li{counter-increment:c;display:grid;grid-template-columns:56px minmax(0,1fr);gap:4px 14px;padding:16px 0;border-top:1px solid var(--rule)}
+.chap li::before{content:counter(c,decimal-leading-zero);font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--accent-text);padding-top:7px;grid-row:span 2}
+.chap b{font-weight:400;font-size:23px}
+.chap span{color:var(--muted);font-size:17px}
+.lessons{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.lessons li{border-left:3px solid var(--accent);padding-left:16px}
+.lessons b{display:block;font-weight:400;font-size:23px;line-height:1.3}
+.lessons span{color:var(--muted);font-size:18px}
+.leaves{border-top:3px solid var(--accent);padding-top:22px;max-width:900px}
+.leaves p{font-size:clamp(26px,3.2vw,38px);line-height:1.25;font-style:italic}
+.poll{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.poll button{font-family:var(--serif);font-size:18px;border:1.5px solid var(--rule);background:var(--card);border-radius:999px;padding:10px 18px;cursor:pointer;color:var(--ink)}
+.poll button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent);color:#fff}
+.soon{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.soon>div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.soon>div{grid-template-columns:minmax(0,1fr);gap:4px}}
+.soon q{font-size:24px;font-style:italic;quotes:"“" "”"}
+
+.sketch path,.sketch line,.sketch rect,.sketch ellipse,.sketch circle{stroke:var(--ink);fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.sketch .thin{stroke-width:1.3;opacity:.5}
+.sketch .page{fill:var(--card)}
+.sketch text{fill:var(--ink);font-family:var(--mono);stroke:none}
+.sketch .wash{fill:var(--accent);stroke:none;opacity:.55}
+.sketch .stamp{fill:var(--accent-text)}
+.sketch .trail{fill:none;stroke:#E09A00;stroke-width:2.2;stroke-dasharray:2 9;opacity:.75}
+.vs{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;min-width:0}
+.vs-frame{position:relative;aspect-ratio:16/10;background:var(--paper);border:1px solid var(--rule);border-radius:12px;overflow:hidden;padding:14px 16px 6px;display:flex;align-items:flex-end;transition:transform .35s,box-shadow .35s}
+a.vs:hover .vs-frame{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(26,26,26,.35)}
+.vs-frame .sketch{width:100%;height:100%;display:block;overflow:visible}
+.vs-tag{position:absolute;top:10px;left:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:3px 9px;color:var(--muted)}
+.vs-play{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;box-shadow:0 6px 14px -6px rgba(224,154,0,.7)}
+.vs-play svg{width:20px;height:20px}
+.vs-n{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text);margin-top:4px}
+.vs-t{font-family:var(--serif);font-style:italic;font-weight:400;font-size:21px;line-height:1.25;margin:0;text-wrap:balance}
+.vs-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 24px}
+@media (max-width:1024px){.vs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.vs-grid{grid-template-columns:minmax(0,1fr)}}
+.vs{scroll-margin-top:90px}
+.vs-t{font-size:20px}
+</style><link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="../assets/brand/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+
+
+<!-- go-live -->
+<meta name="description" content="Each one is a short film about something that really happened at work: what people did, why, and what happened next. Some have a clear lesson. Others leave…">
+<link rel="canonical" href="https://www.mimansa.work/stories/">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:site_name" content="Mimansa">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stories · Mimansa">
+<meta property="og:description" content="Each one is a short film about something that really happened at work: what people did, why, and what happened next. Some have a clear lesson. Others leave…">
+<meta property="og:url" content="https://www.mimansa.work/stories/">
+<meta property="og:image" content="https://www.mimansa.work/assets/brand/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /go-live -->
+</head><body class="mm"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="ink" filterUnits="userSpaceOnUse" x="-2000" y="-2000" width="6000" height="6000"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></defs></svg><header class="mm-top"><div class="in"><a href="../index.html" aria-label="Mimansa, home"><img src="../articles/assets/logo.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"></a><nav class="mm-nav " aria-label="Main"><a href="../articles/index.html">Articles</a><a href="../stories/index.html" aria-current="page">Stories</a><a href="../toolkits/index.html">Skills</a><a href="../about.html">About</a><a href="../contribute.html">Contribute</a><a class="mm-studio" data-creators hidden href="../studio/index.html">Studio</a><a class="mm-auth" data-mm-auth href="../join.html">Join</a></nav></div></header>
+<main>
+<section class="hero-band"><div class="mm-wrap in">
+ <div class="stack"><span class="mm-kick">Stories</span><h1>Stories from Indian workplaces, shared by HR leaders.</h1>
+ <p class="lead m" style="max-width:740px">Each one is a short film about something that really happened at work: what people did, why, and what happened next. Some have a clear lesson. Others leave you asking what you would have done. Every name and detail that could point to a person is changed.</p><button class="mm-share" type="button" data-share aria-haspopup="true"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Share</button></div>
+ <div class="mm-ky "><div class="st"><img src="../articles/assets/kyun/listening.webp" alt="" style="--w:112px"><svg viewBox="0 0 220 36" aria-hidden="true"><path class="land-line" d="M14 17 C60 6 160 5 206 15"/><path class="tick" d="M38 13 l-3 -6 M44 12 l1 -6 M176 11 l3 -6 M182 12 l5 -5 M104 7 l0 -5"/></svg></div><div><p>Each story came from an HR leader who shared with us. We interviewed them before filming.</p></div></div>
+</div></section>
+<section class="mm-sec"><div class="mm-wrap">
+<span class="st-head">Featured story</span><div class="st-feat st-ph" id="s1" data-yt="B5NF65vzB04"><div class="st-frame" role="button" tabindex="0" aria-label="Play film"><img src="../media/stories/two-letters-on-the-table.jpg" alt="Poster: Two Letters on the Table" width="1280" height="720"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">01 · Exits</span><h3 class="st-title">Two Letters on the Table</h3><p class="st-hook">He Ate His Own Termination Letter</p><p class="st-q">What do you do when an exit meeting goes off script?</p><span class="st-meta">Film</span></div></div><span class="st-head">Also featured</span><a class="st-feat st-ph" id="s2" href="the-only-one-on-your-side.html"><div class="st-frame"><img src="../media/stories/resigned-withdrawn-resigned.jpg" alt="Poster: Resigned. Withdrawn. Resigned." width="1280" height="720"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">02 · Workplace investigations</span><h3 class="st-title">Resigned. Withdrawn. Resigned.</h3><p class="st-hook">“He Says He’s the Only One on My Side”: The Complaint HR Couldn’t Prove</p><p class="st-q">What should HR do when a complaint can’t be proved?</p><span class="st-meta">Film · 9 min</span><span class="st-go">Watch the film →</span></div></a><span class="st-head">More stories</span><div class="st-grid st-ph2"><div class="st-card st-ph" id="s3" data-yt="zmYrRb07xn8"><div class="st-frame" role="button" tabindex="0" aria-label="Play film"><img src="../media/stories/the-notice-period-from-london.jpg" alt="Poster: The Notice Period from London" width="1280" height="720" loading="lazy"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">03 · Exits</span><h3 class="st-title">The Notice Period from London</h3><p class="st-hook">A Three-Week Holiday That Became a Move Abroad</p><p class="st-q">When does a long holiday turn into a resignation?</p><span class="st-meta">Film</span></div></div><div class="st-card st-ph" id="s4" data-yt="Toc2b9GI5JE"><div class="st-frame" role="button" tabindex="0" aria-label="Play film"><img src="../media/stories/it-wasnt-my-signature.jpg" alt="Poster: It Wasn’t My Signature, But It Was My Mistake" width="1280" height="720" loading="lazy"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">04 · Compliance</span><h3 class="st-title">It Wasn’t My Signature, But It Was My Mistake</h3><p class="st-hook">One Backdated Entry Almost Cost an HR Manager His Job</p><p class="st-q">How much can one small shortcut cost?</p><span class="st-meta">Film</span></div></div><div class="st-card st-ph" id="s5" data-yt="n_Fzmv9GGn8"><div class="st-frame" role="button" tabindex="0" aria-label="Play film"><img src="../media/stories/get-it-done-today.jpg" alt="Poster: Get It Done Today" width="1280" height="720" loading="lazy"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">05 · Workplace investigations</span><h3 class="st-title">Get It Done Today</h3><p class="st-hook">She Followed the CEO’s Order. Then Came the Inquiry.</p><p class="st-q">Who answers for an order that came from the top?</p><span class="st-meta">Film</span></div></div><div class="st-card st-ph" id="s6" data-yt="TVcI-GTrERA"><div class="st-frame" role="button" tabindex="0" aria-label="Play film"><img src="../media/stories/pfa-the-fir.jpg" alt="Poster: PFA the FIR" width="1280" height="720" loading="lazy"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">06 · Compliance</span><h3 class="st-title">PFA the FIR</h3><p class="st-hook">A Fired Employee Named HR in a Police Complaint. The CCTV Was Already Gone.</p><p class="st-q">What should HR keep, and for how long?</p><span class="st-meta">Film</span></div></div><div class="st-card st-ph" id="s7" data-yt="GBEz-oVff4o"><div class="st-frame" role="button" tabindex="0" aria-label="Play film"><img src="../media/stories/paid-like-me.jpg" alt="Poster: Paid Like Me" width="1280" height="720" loading="lazy"><span class="st-play" aria-hidden="true"></span></div><div class="st-body"><span class="st-kick">07 · Hiring</span><h3 class="st-title">Paid Like Me</h3><p class="st-hook">He Checked His Own Hiring Bill. The Numbers Didn’t Add Up.</p><p class="st-q">Who checks what hiring really costs?</p><span class="st-meta">Film</span></div></div><div class="st-card st-ph" id="s8"><div class="st-frame"><img src="../media/stories/termination-without-cause.jpg" alt="Poster: Termination Without Cause" width="1280" height="720" loading="lazy"></div><div class="st-body"><span class="st-kick">08 · Governance</span><h3 class="st-title">Termination Without Cause</h3><p class="st-hook">How a Two-Line Contract Clause Saved a Company from Its Own Business Head</p><p class="st-q">What can a contract do when the problem is the business head?</p><span class="st-meta">Film · coming soon</span></div></div></div></div></section>
+<section class="mm-sec"><div class="mm-wrap mm-two" style="align-items:center">
+ <div class="mm-ky "><div class="st"><img src="../articles/assets/kyun/brave.webp" alt="" style="--w:116px"><svg viewBox="0 0 220 36" aria-hidden="true"><path class="land-line" d="M14 17 C60 6 160 5 206 15"/><path class="tick" d="M38 13 l-3 -6 M44 12 l1 -6 M176 11 l3 -6 M182 12 l5 -5 M104 7 l0 -5"/></svg></div><div><p>Have a story from your workplace? You can share it without your name.</p></div></div>
+ <div class="stack"><h2>Share a situation from your workplace.</h2><p class="m">Anyone can share. Describe what happened in your own words and leave out names. You can keep your own name off anything we publish.</p><p><a class="mm-btn" href="../contribute.html">Share your story</a></p></div>
+</div></section>
+</main><footer class="mm-foot"><div class="in"><img src="../articles/assets/logo-dark.png" alt="Mimansa Research &amp; Advisory" width="640" height="180"><nav><a href="../articles/index.html">Articles</a><a href="../stories/index.html">Stories</a><a href="../toolkits/index.html">Skills</a><a href="../about.html">About</a><a href="../contribute.html">Contribute</a><a href="../join.html">Join</a></nav><div class="mm-reach"><span>Reach us</span><a href="mailto:team@mimansa.work">team@mimansa.work</a><span class="sep">·</span><a href="#linkedin">LinkedIn</a><a href="#youtube">YouTube</a></div></div></footer><script src="../assets/mm.js" data-root="../"></script><style>.st-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}[data-yt] .st-frame{cursor:pointer}</style>
+<script>
+(function(){
+  function play(card){
+    var f=card.querySelector('.st-frame'); if(!f||f.querySelector('iframe'))return;
+    var i=document.createElement('iframe');
+    i.src='https://www.youtube-nocookie.com/embed/'+card.getAttribute('data-yt')+'?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+    i.title=(card.querySelector('.st-title')||{}).textContent||'Film';
+    i.allow='autoplay; encrypted-media; picture-in-picture; fullscreen'; i.allowFullscreen=true;
+    f.innerHTML=''; f.removeAttribute('role'); f.removeAttribute('tabindex'); f.removeAttribute('aria-label'); f.style.cursor='auto'; f.appendChild(i);
+  }
+  document.querySelectorAll('[data-yt]').forEach(function(c){
+    var f=c.querySelector('.st-frame');
+    f.addEventListener('click',function(){play(c)});
+    f.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();play(c)}});
+  });
+  if(location.hash){var t=document.querySelector(location.hash+'[data-yt]'); if(t)t.scrollIntoView({block:'center'})}
+})();
+</script>
+</body></html>
